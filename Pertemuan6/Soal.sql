@@ -4,11 +4,16 @@ FROM Employee e
 JOIN Departments d ON e.DepartmentID = d.DepartmentID
 WHERE e.DepartmentID IS NOT NULL;
 
+use pertemuan6
+
+
+
 -- Soal 2
 SELECT e.Name, p.ProjectName
 FROM Employee e
 LEFT JOIN Projects p ON e.DepartmentID = p.DepartmentID
-ORDER BY e.Name;
+ORDER BY e.Name;
+
 
 -- Soal 3
 SELECT p.ProjectName, d.DepartmentName
@@ -32,6 +37,7 @@ CROSS JOIN
     Projects p
 ORDER BY 
     e.Name, p.ProjectName;
+
 
 -- Soal 6
 SELECT 
